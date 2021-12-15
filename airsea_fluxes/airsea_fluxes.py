@@ -13,7 +13,6 @@ class airsea_fluxes:
         """
         Interface to the DM18 method to compute the air-sea gas transfer velocity
         """
-        print(ustar)
         kwNB_660      = DM18.DM18_KW660_nb(ustar,anb=anb)
         kwB_660       = DM18.DM18_KW660_b( ustar, hs, alpha, sc_no, abt=abt, gamma=gamma, zeta=zeta, grav=grav)
         return kwNB_660+kwB_660
